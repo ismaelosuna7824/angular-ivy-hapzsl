@@ -1,0 +1,25 @@
+<header>   	
+    <div class="row">
+  
+      <div class="top-bar">
+        <a class="menu-toggle" (click)="menu()" *ngIf="menus"><span></span></a>
+        <a class="menu-toggle is-clicked" (click)="menu()" *ngIf="menus == false"><span></span></a>
+  
+        <div class="">
+            <a href="index.html"></a>
+         </div>		      
+  
+        <nav id="main-nav-wrap">
+         <ul class="main-navigation" [ngClass]="mostrar">
+           <li class="current"><a class="smoothscroll"  [scrollTo]="'#intro'" [scrollDuration]="1000" [scrollOffset]="0" title="" (click)="menu()">Home</a></li>
+           <li><a class="smoothscroll"  [scrollTo]="'#about'" [scrollDuration]="1000" [scrollOffset]="0" title="" (click)="menu()">About</a></li>
+           <li><a class="smoothscroll"  [scrollTo]="'#resume'" [scrollDuration]="1000" [scrollOffset]="0"  title=""(click)="menu()">Resume</a></li>
+           <li><a class="smoothscroll"  [scrollTo]="'#portfolio'" [scrollDuration]="1000" [scrollOffset]="0" title=""(click)="menu()">Portfolio</a></li>		
+           <li><a class="smoothscroll"  [scrollTo]="'#contact'" [scrollDuration]="1000" [scrollOffset]="90"  title=""(click)="menu()">Contact</a></li>		
+         </ul>
+       </nav>    		
+      </div> <!-- /top-bar --> 
+      
+    </div> <!-- /row --> 		
+  </header> <!-- /header -->
+  
